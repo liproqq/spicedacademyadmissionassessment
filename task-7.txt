@@ -1,0 +1,17 @@
+Ideas to improve the algorithm:
+
+1. More brute force
+
+Smaller increments of the slope and intercept with more loops
+
+2. Less brute force
+
+Stop the program after the approximation doesn't improve anymore (MSE doesn't get lower)
+
+3. Try a and b independently
+
+In the algorithm a and b are incremented within the same loop. I assume that a or b can result in a better MSE if they weren't so strictly connected in the same loop
+
+4. Reduce complexity
+
+Start the algorithm with two extreme values. One is very high and the other is very low. Then you try the middle of those two values against the two values to see within which half the better value should be. You replace the worse of the first two values with the middle value. Then you start over to find the new middle value etc.
